@@ -65,7 +65,24 @@
     font-size: 40px
     }
 
-  
+    * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
@@ -82,14 +99,21 @@
       <h1>
           Contact Info
               </h1>
-      
-        <p>
-          <img src="Assets\SEWRPC Contact.png" alt="Mr. Green Robot" class="center"
-            width="450px" height = "600px" /></p>
-            
   </div>
     
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <p>
+        <img src="Assets\SEWRPC Contact.png" alt="Mr. Green Robot" class="center"
+          width="450px" height = "600px" /></p>
+    </div>
     
+    <div class="column" style="background-color:#bbb;">
+      <p>
+        <img src="Assets\Ben Pic.jpg" alt="Mr. Green Robot" class="center"
+          width="450px" height = "600px" /></p>
+    </div>
+  </div>
 
 
     
